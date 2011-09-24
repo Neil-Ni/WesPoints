@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53A4A99C142E4C7700B20332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A99B142E4C7700B20332 /* UIKit.framework */; };
+		53A4A99E142E4C7700B20332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A99D142E4C7700B20332 /* Foundation.framework */; };
+		53A4A9A0142E4C7700B20332 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A99F142E4C7700B20332 /* CoreGraphics.framework */; };
+		53A4A9A6142E4C7700B20332 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53A4A9A4142E4C7700B20332 /* InfoPlist.strings */; };
+		53A4A9A8142E4C7700B20332 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A4A9A7142E4C7700B20332 /* main.m */; };
+		53A4A9AC142E4C7700B20332 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A4A9AB142E4C7700B20332 /* AppDelegate.m */; };
+		53A4A9AF142E4C7700B20332 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4A9AD142E4C7700B20332 /* MainStoryboard_iPhone.storyboard */; };
+		53A4A9B2142E4C7700B20332 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A4A9B0142E4C7700B20332 /* MainStoryboard_iPad.storyboard */; };
+		53A4A9B5142E4C7700B20332 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A4A9B4142E4C7700B20332 /* ViewController.m */; };
+		53A4A9BD142E4C7800B20332 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A9BC142E4C7800B20332 /* SenTestingKit.framework */; };
+		53A4A9BE142E4C7800B20332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A99B142E4C7700B20332 /* UIKit.framework */; };
+		53A4A9BF142E4C7800B20332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A99D142E4C7700B20332 /* Foundation.framework */; };
+		53A4A9C7142E4C7800B20332 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53A4A9C5142E4C7800B20332 /* InfoPlist.strings */; };
+		53A4A9CA142E4C7800B20332 /* Points_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A4A9C9142E4C7800B20332 /* Points_CalculatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53A4A9C0142E4C7800B20332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53A4A98E142E4C7700B20332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A4A996142E4C7700B20332;
+			remoteInfo = "Points Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53A4A997142E4C7700B20332 /* Points Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Points Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A4A99B142E4C7700B20332 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53A4A99D142E4C7700B20332 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53A4A99F142E4C7700B20332 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53A4A9A3142E4C7700B20332 /* Points Calculator-Info.plist */ = {isa = PBXFileReference; path = "Points Calculator-Info.plist"; sourceTree = "<group>"; };
+		53A4A9A5142E4C7700B20332 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53A4A9A7142E4C7700B20332 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53A4A9A9142E4C7700B20332 /* Points Calculator-Prefix.pch */ = {isa = PBXFileReference; path = "Points Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		53A4A9AA142E4C7700B20332 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		53A4A9AB142E4C7700B20332 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53A4A9AE142E4C7700B20332 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		53A4A9B1142E4C7700B20332 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		53A4A9B3142E4C7700B20332 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		53A4A9B4142E4C7700B20332 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53A4A9BB142E4C7800B20332 /* Points CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Points CalculatorTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A4A9BC142E4C7800B20332 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		53A4A9C4142E4C7800B20332 /* Points CalculatorTests-Info.plist */ = {isa = PBXFileReference; path = "Points CalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		53A4A9C6142E4C7800B20332 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53A4A9C8142E4C7800B20332 /* Points_CalculatorTests.h */ = {isa = PBXFileReference; path = Points_CalculatorTests.h; sourceTree = "<group>"; };
+		53A4A9C9142E4C7800B20332 /* Points_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Points_CalculatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53A4A994142E4C7700B20332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4A99C142E4C7700B20332 /* UIKit.framework in Frameworks */,
+				53A4A99E142E4C7700B20332 /* Foundation.framework in Frameworks */,
+				53A4A9A0142E4C7700B20332 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A4A9B7142E4C7800B20332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4A9BD142E4C7800B20332 /* SenTestingKit.framework in Frameworks */,
+				53A4A9BE142E4C7800B20332 /* UIKit.framework in Frameworks */,
+				53A4A9BF142E4C7800B20332 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53A4A98C142E4C7700B20332 = {
+			isa = PBXGroup;
+			children = (
+				53A4A9A1142E4C7700B20332 /* Points Calculator */,
+				53A4A9C2142E4C7800B20332 /* Points CalculatorTests */,
+				53A4A99A142E4C7700B20332 /* Frameworks */,
+				53A4A998142E4C7700B20332 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53A4A998142E4C7700B20332 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53A4A997142E4C7700B20332 /* Points Calculator.app */,
+				53A4A9BB142E4C7800B20332 /* Points CalculatorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53A4A99A142E4C7700B20332 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53A4A99B142E4C7700B20332 /* UIKit.framework */,
+				53A4A99D142E4C7700B20332 /* Foundation.framework */,
+				53A4A99F142E4C7700B20332 /* CoreGraphics.framework */,
+				53A4A9BC142E4C7800B20332 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53A4A9A1142E4C7700B20332 /* Points Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				53A4A9AA142E4C7700B20332 /* AppDelegate.h */,
+				53A4A9AB142E4C7700B20332 /* AppDelegate.m */,
+				53A4A9AD142E4C7700B20332 /* MainStoryboard_iPhone.storyboard */,
+				53A4A9B0142E4C7700B20332 /* MainStoryboard_iPad.storyboard */,
+				53A4A9B3142E4C7700B20332 /* ViewController.h */,
+				53A4A9B4142E4C7700B20332 /* ViewController.m */,
+				53A4A9A2142E4C7700B20332 /* Supporting Files */,
+			);
+			path = "Points Calculator";
+			sourceTree = "<group>";
+		};
+		53A4A9A2142E4C7700B20332 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53A4A9A3142E4C7700B20332 /* Points Calculator-Info.plist */,
+				53A4A9A4142E4C7700B20332 /* InfoPlist.strings */,
+				53A4A9A7142E4C7700B20332 /* main.m */,
+				53A4A9A9142E4C7700B20332 /* Points Calculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53A4A9C2142E4C7800B20332 /* Points CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				53A4A9C8142E4C7800B20332 /* Points_CalculatorTests.h */,
+				53A4A9C9142E4C7800B20332 /* Points_CalculatorTests.m */,
+				53A4A9C3142E4C7800B20332 /* Supporting Files */,
+			);
+			path = "Points CalculatorTests";
+			sourceTree = "<group>";
+		};
+		53A4A9C3142E4C7800B20332 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53A4A9C4142E4C7800B20332 /* Points CalculatorTests-Info.plist */,
+				53A4A9C5142E4C7800B20332 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53A4A996142E4C7700B20332 /* Points Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A4A9CD142E4C7800B20332 /* Build configuration list for PBXNativeTarget "Points Calculator" */;
+			buildPhases = (
+				53A4A993142E4C7700B20332 /* Sources */,
+				53A4A994142E4C7700B20332 /* Frameworks */,
+				53A4A995142E4C7700B20332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Points Calculator";
+			productName = "Points Calculator";
+			productReference = 53A4A997142E4C7700B20332 /* Points Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53A4A9BA142E4C7800B20332 /* Points CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A4A9D0142E4C7800B20332 /* Build configuration list for PBXNativeTarget "Points CalculatorTests" */;
+			buildPhases = (
+				53A4A9B6142E4C7800B20332 /* Sources */,
+				53A4A9B7142E4C7800B20332 /* Frameworks */,
+				53A4A9B8142E4C7800B20332 /* Resources */,
+				53A4A9B9142E4C7800B20332 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53A4A9C1142E4C7800B20332 /* PBXTargetDependency */,
+			);
+			name = "Points CalculatorTests";
+			productName = "Points CalculatorTests";
+			productReference = 53A4A9BB142E4C7800B20332 /* Points CalculatorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53A4A98E142E4C7700B20332 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Wesleyan University";
+			};
+			buildConfigurationList = 53A4A991142E4C7700B20332 /* Build configuration list for PBXProject "Points Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53A4A98C142E4C7700B20332;
+			productRefGroup = 53A4A998142E4C7700B20332 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53A4A996142E4C7700B20332 /* Points Calculator */,
+				53A4A9BA142E4C7800B20332 /* Points CalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53A4A995142E4C7700B20332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4A9A6142E4C7700B20332 /* InfoPlist.strings in Resources */,
+				53A4A9AF142E4C7700B20332 /* MainStoryboard_iPhone.storyboard in Resources */,
+				53A4A9B2142E4C7700B20332 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A4A9B8142E4C7800B20332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4A9C7142E4C7800B20332 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53A4A9B9142E4C7800B20332 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53A4A993142E4C7700B20332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4A9A8142E4C7700B20332 /* main.m in Sources */,
+				53A4A9AC142E4C7700B20332 /* AppDelegate.m in Sources */,
+				53A4A9B5142E4C7700B20332 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A4A9B6142E4C7800B20332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4A9CA142E4C7800B20332 /* Points_CalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53A4A9C1142E4C7800B20332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53A4A996142E4C7700B20332 /* Points Calculator */;
+			targetProxy = 53A4A9C0142E4C7800B20332 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53A4A9A4142E4C7700B20332 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A4A9A5142E4C7700B20332 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53A4A9AD142E4C7700B20332 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A4A9AE142E4C7700B20332 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		53A4A9B0142E4C7700B20332 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A4A9B1142E4C7700B20332 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		53A4A9C5142E4C7800B20332 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A4A9C6142E4C7800B20332 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53A4A9CB142E4C7800B20332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53A4A9CC142E4C7800B20332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53A4A9CE142E4C7800B20332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Points Calculator/Points Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Points Calculator/Points Calculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53A4A9CF142E4C7800B20332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Points Calculator/Points Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Points Calculator/Points Calculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		53A4A9D1142E4C7800B20332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Points Calculator.app/Points Calculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Points Calculator/Points Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Points CalculatorTests/Points CalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		53A4A9D2142E4C7800B20332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Points Calculator.app/Points Calculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Points Calculator/Points Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Points CalculatorTests/Points CalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53A4A991142E4C7700B20332 /* Build configuration list for PBXProject "Points Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A4A9CB142E4C7800B20332 /* Debug */,
+				53A4A9CC142E4C7800B20332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A4A9CD142E4C7800B20332 /* Build configuration list for PBXNativeTarget "Points Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A4A9CE142E4C7800B20332 /* Debug */,
+				53A4A9CF142E4C7800B20332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53A4A9D0142E4C7800B20332 /* Build configuration list for PBXNativeTarget "Points CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A4A9D1142E4C7800B20332 /* Debug */,
+				53A4A9D2142E4C7800B20332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53A4A98E142E4C7700B20332 /* Project object */;
+}
