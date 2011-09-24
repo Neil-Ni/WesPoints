@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7453E8B142E64D700D7114D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7453E8A142E64D700D7114D /* UIKit.framework */; };
+		C7453E8D142E64D700D7114D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7453E8C142E64D700D7114D /* Foundation.framework */; };
+		C7453E8F142E64D700D7114D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7453E8E142E64D700D7114D /* CoreGraphics.framework */; };
+		C7453E95142E64D700D7114D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7453E93142E64D700D7114D /* InfoPlist.strings */; };
+		C7453E97142E64D700D7114D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7453E96142E64D700D7114D /* main.m */; };
+		C7453E9B142E64D700D7114D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7453E9A142E64D700D7114D /* AppDelegate.m */; };
+		C7453E9E142E64D700D7114D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7453E9C142E64D700D7114D /* MainStoryboard.storyboard */; };
+		C7453EA1142E64D700D7114D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7453EA0142E64D700D7114D /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C7453E86142E64D700D7114D /* WesPointsCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesPointsCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7453E8A142E64D700D7114D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C7453E8C142E64D700D7114D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7453E8E142E64D700D7114D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C7453E92142E64D700D7114D /* WesPointsCalculator-Info.plist */ = {isa = PBXFileReference; path = "WesPointsCalculator-Info.plist"; sourceTree = "<group>"; };
+		C7453E94142E64D700D7114D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7453E96142E64D700D7114D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7453E98142E64D700D7114D /* WesPointsCalculator-Prefix.pch */ = {isa = PBXFileReference; path = "WesPointsCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		C7453E99142E64D700D7114D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7453E9A142E64D700D7114D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7453E9D142E64D700D7114D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C7453E9F142E64D700D7114D /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		C7453EA0142E64D700D7114D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7453E83142E64D700D7114D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7453E8B142E64D700D7114D /* UIKit.framework in Frameworks */,
+				C7453E8D142E64D700D7114D /* Foundation.framework in Frameworks */,
+				C7453E8F142E64D700D7114D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7453E7B142E64D600D7114D = {
+			isa = PBXGroup;
+			children = (
+				C7453E90142E64D700D7114D /* WesPointsCalculator */,
+				C7453E89142E64D700D7114D /* Frameworks */,
+				C7453E87142E64D700D7114D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7453E87142E64D700D7114D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7453E86142E64D700D7114D /* WesPointsCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7453E89142E64D700D7114D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7453E8A142E64D700D7114D /* UIKit.framework */,
+				C7453E8C142E64D700D7114D /* Foundation.framework */,
+				C7453E8E142E64D700D7114D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7453E90142E64D700D7114D /* WesPointsCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				C7453E99142E64D700D7114D /* AppDelegate.h */,
+				C7453E9A142E64D700D7114D /* AppDelegate.m */,
+				C7453E9C142E64D700D7114D /* MainStoryboard.storyboard */,
+				C7453E9F142E64D700D7114D /* ViewController.h */,
+				C7453EA0142E64D700D7114D /* ViewController.m */,
+				C7453E91142E64D700D7114D /* Supporting Files */,
+			);
+			path = WesPointsCalculator;
+			sourceTree = "<group>";
+		};
+		C7453E91142E64D700D7114D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7453E92142E64D700D7114D /* WesPointsCalculator-Info.plist */,
+				C7453E93142E64D700D7114D /* InfoPlist.strings */,
+				C7453E96142E64D700D7114D /* main.m */,
+				C7453E98142E64D700D7114D /* WesPointsCalculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7453E85142E64D700D7114D /* WesPointsCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7453EA4142E64D700D7114D /* Build configuration list for PBXNativeTarget "WesPointsCalculator" */;
+			buildPhases = (
+				C7453E82142E64D700D7114D /* Sources */,
+				C7453E83142E64D700D7114D /* Frameworks */,
+				C7453E84142E64D700D7114D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WesPointsCalculator;
+			productName = WesPointsCalculator;
+			productReference = C7453E86142E64D700D7114D /* WesPointsCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7453E7D142E64D600D7114D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C7453E80142E64D600D7114D /* Build configuration list for PBXProject "WesPointsCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7453E7B142E64D600D7114D;
+			productRefGroup = C7453E87142E64D700D7114D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7453E85142E64D700D7114D /* WesPointsCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7453E84142E64D700D7114D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7453E95142E64D700D7114D /* InfoPlist.strings in Resources */,
+				C7453E9E142E64D700D7114D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7453E82142E64D700D7114D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7453E97142E64D700D7114D /* main.m in Sources */,
+				C7453E9B142E64D700D7114D /* AppDelegate.m in Sources */,
+				C7453EA1142E64D700D7114D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C7453E93142E64D700D7114D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7453E94142E64D700D7114D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7453E9C142E64D700D7114D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7453E9D142E64D700D7114D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7453EA2142E64D700D7114D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7453EA3142E64D700D7114D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7453EA5142E64D700D7114D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WesPointsCalculator/WesPointsCalculator-Prefix.pch";
+				INFOPLIST_FILE = "WesPointsCalculator/WesPointsCalculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C7453EA6142E64D700D7114D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WesPointsCalculator/WesPointsCalculator-Prefix.pch";
+				INFOPLIST_FILE = "WesPointsCalculator/WesPointsCalculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7453E80142E64D600D7114D /* Build configuration list for PBXProject "WesPointsCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7453EA2142E64D700D7114D /* Debug */,
+				C7453EA3142E64D700D7114D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7453EA4142E64D700D7114D /* Build configuration list for PBXNativeTarget "WesPointsCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7453EA5142E64D700D7114D /* Debug */,
+				C7453EA6142E64D700D7114D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7453E7D142E64D600D7114D /* Project object */;
+}
