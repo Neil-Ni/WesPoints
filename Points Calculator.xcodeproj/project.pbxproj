@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5396D7DE143E19BB00E8C346 /* Points_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5396D7DD143E19BB00E8C346 /* Points_Icon.png */; };
 		53A4A99C142E4C7700B20332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A99B142E4C7700B20332 /* UIKit.framework */; };
 		53A4A99E142E4C7700B20332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A99D142E4C7700B20332 /* Foundation.framework */; };
 		53A4A9A0142E4C7700B20332 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A4A99F142E4C7700B20332 /* CoreGraphics.framework */; };
@@ -34,25 +35,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5396D7DD143E19BB00E8C346 /* Points_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Points_Icon.png; sourceTree = "<group>"; };
 		53A4A997142E4C7700B20332 /* Points Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Points Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A4A99B142E4C7700B20332 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53A4A99D142E4C7700B20332 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		53A4A99F142E4C7700B20332 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		53A4A9A3142E4C7700B20332 /* Points Calculator-Info.plist */ = {isa = PBXFileReference; path = "Points Calculator-Info.plist"; sourceTree = "<group>"; };
+		53A4A9A3142E4C7700B20332 /* Points Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Points Calculator-Info.plist"; sourceTree = "<group>"; };
 		53A4A9A5142E4C7700B20332 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53A4A9A7142E4C7700B20332 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		53A4A9A9142E4C7700B20332 /* Points Calculator-Prefix.pch */ = {isa = PBXFileReference; path = "Points Calculator-Prefix.pch"; sourceTree = "<group>"; };
-		53A4A9AA142E4C7700B20332 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		53A4A9A9142E4C7700B20332 /* Points Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Points Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		53A4A9AA142E4C7700B20332 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53A4A9AB142E4C7700B20332 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53A4A9AE142E4C7700B20332 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		53A4A9B1142E4C7700B20332 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		53A4A9B3142E4C7700B20332 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		53A4A9B3142E4C7700B20332 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		53A4A9B4142E4C7700B20332 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		53A4A9BB142E4C7800B20332 /* Points CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Points CalculatorTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A4A9BC142E4C7800B20332 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		53A4A9C4142E4C7800B20332 /* Points CalculatorTests-Info.plist */ = {isa = PBXFileReference; path = "Points CalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		53A4A9C4142E4C7800B20332 /* Points CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Points CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		53A4A9C6142E4C7800B20332 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		53A4A9C8142E4C7800B20332 /* Points_CalculatorTests.h */ = {isa = PBXFileReference; path = Points_CalculatorTests.h; sourceTree = "<group>"; };
+		53A4A9C8142E4C7800B20332 /* Points_CalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Points_CalculatorTests.h; sourceTree = "<group>"; };
 		53A4A9C9142E4C7800B20332 /* Points_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Points_CalculatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		53A4A98C142E4C7700B20332 = {
 			isa = PBXGroup;
 			children = (
+				5396D7DD143E19BB00E8C346 /* Points_Icon.png */,
 				53A4A9A1142E4C7700B20332 /* Points Calculator */,
 				53A4A9C2142E4C7800B20332 /* Points CalculatorTests */,
 				53A4A99A142E4C7700B20332 /* Frameworks */,
@@ -228,6 +231,7 @@
 				53A4A9A6142E4C7700B20332 /* InfoPlist.strings in Resources */,
 				53A4A9AF142E4C7700B20332 /* MainStoryboard_iPhone.storyboard in Resources */,
 				53A4A9B2142E4C7700B20332 /* MainStoryboard_iPad.storyboard in Resources */,
+				5396D7DE143E19BB00E8C346 /* Points_Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +448,7 @@
 				53A4A9CF142E4C7800B20332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53A4A9D0142E4C7800B20332 /* Build configuration list for PBXNativeTarget "Points CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +457,7 @@
 				53A4A9D2142E4C7800B20332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
