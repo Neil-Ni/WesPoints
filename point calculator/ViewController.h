@@ -8,21 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate, UIPickerViewDelegate> {
+@interface ViewController : UIViewController <UITextFieldDelegate, UIPickerViewDelegate, UITableViewDelegate, UITableViewDataSource> {
     UITextField *PointsTextField;
     UITextField *MealsTextFieds;
-    UILabel *CurrentDate;
-    UILabel *DaysLeft;
 
     UILabel *SpendingRatePerDay;
     UILabel *IdeaSpendingRatePerDay;
+    UILabel *SpendingRatePerWeek;
+    UILabel *IdealSpendingRatePerWeek;
+    UILabel *SpendingPerWeekLabel;
+    UILabel *IdealPerWeekLabel;
     UILabel *Label;
     UILabel *PointsPerDayLabel;
     UILabel *IdealPerDayLabel;
     UILabel *SpendingPerDayLabel;
-    UISlider *ShowPointsOrMeals;
-
-    UILabel *WeeksLeft;
+    UITableView *MealsPlanPicker;
 
     UISwitch *Switch;
     NSString *Days;
@@ -33,29 +33,35 @@
     float PointsFromMealPlan; 
     NSInteger Meals;
     NSInteger MealsFromMealPlan;
-    UIPickerView *Picker;
     NSMutableArray *Mealplans;
-    int i;
-    int y;
-
+    int i, y, z;
+    NSTimer *timer;
+    UILabel *Dateinformation;
+    UILabel *points;
+    UILabel *meals;
 }
+@property (strong, nonatomic) IBOutlet UILabel *meals;
+@property (strong, nonatomic) IBOutlet UILabel *points;
+@property (strong, nonatomic) IBOutlet UILabel *Dateinformation;
 @property (strong,nonatomic) NSMutableArray *Mealplans;
-@property (strong, nonatomic) IBOutlet UIPickerView *Picker;
 @property (strong, nonatomic) IBOutlet UITextField *PointsTextField;
 @property (strong, nonatomic) IBOutlet UITextField *MealsTextFieds;
-@property (strong, nonatomic) IBOutlet UILabel *CurrentDate;
-@property (strong, nonatomic) IBOutlet UILabel *DaysLeft;
-@property (strong, nonatomic) IBOutlet UILabel *WeeksLeft;
 
+@property (strong, nonatomic) IBOutlet UITableView *MealsPlanPicker;
 @property (strong, nonatomic) IBOutlet UISwitch *Switch;
 @property (strong, nonatomic) IBOutlet UILabel *SpendingRatePerDay;
 @property (strong, nonatomic) IBOutlet UILabel *IdeaSpendingRatePerDay;
 
+@property (strong, nonatomic) IBOutlet UILabel *SpendingRatePerWeek;
+@property (strong, nonatomic) IBOutlet UILabel *IdealSpendingRatePerWeek;
+@property (strong, nonatomic) IBOutlet UILabel *SpendingPerWeekLabel;
+@property (strong, nonatomic) IBOutlet UILabel *IdealPerWeekLabel;
+
 @property (strong, nonatomic) IBOutlet UILabel *Label;
 @property (strong, nonatomic) IBOutlet UILabel *IdealPerDayLabel;
 @property (strong, nonatomic) IBOutlet UILabel *SpendingPerDayLabel;
+@property (strong, nonatomic) NSTimer *timer; 
 
 - (IBAction)ChangeView:(id)sender;
-
 
 @end
