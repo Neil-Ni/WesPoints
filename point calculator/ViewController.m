@@ -21,25 +21,35 @@
 @synthesize IdealPerDayLabel=_IdealPerDayLabel;
 @synthesize SpendingPerDayLabel=_SpendingPerDayLabel;
 @synthesize MealsPlanPicker=_MealsPlanPicker;
-@synthesize Switch=_Switch;
+@synthesize Plan=_Plan;
 @synthesize meals=_meals;
 @synthesize points=_points;
 @synthesize Dateinformation=_Dateinformation;
 @synthesize Mealplans=_Mealplans; 
 @synthesize timer=_timer;
+@synthesize Segmentcontrol=_Segmentcontrol;
+@synthesize defaultPicker=_defaultPicker;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
-   
-    //theTextField.keyboardType = UIKeyboardTypeNumberPad; 
-    
-    if (theTextField == self.PointsTextField) {
-         [theTextField resignFirstResponder];
+    if(theTextField == self.PointsTextField){
+        
+        [theTextField resignFirstResponder];
+        
         double mydouble = [self.PointsTextField.text doubleValue];
         Points = (float)(mydouble);
-        self.Switch.on = NO;
+        self.Segmentcontrol.selectedSegmentIndex =0;
         self.Label.text = [NSString stringWithFormat:@"out of %0.0f", PointsFromMealPlan];
 
-        
+        if(Points > PointsFromMealPlan){
+            self.IdeaSpendingRatePerDay.text = 0;
+            self.SpendingRatePerDay.text = 0;
+            self.IdealSpendingRatePerWeek.text = 0;
+            self.SpendingRatePerWeek.text = 0;
+            self.IdealPerDayLabel.text = 0;
+            self.SpendingPerDayLabel.text = 0;
+            self.IdealPerWeekLabel.text = 0; 
+            self.SpendingPerWeekLabel.text = 0;
+        }
         if( PointsFromMealPlan != 0 && Points < PointsFromMealPlan){
             
             self.SpendingRatePerDay.text = [NSString stringWithFormat:@"%0.1f", (PointsFromMealPlan-Points)/(float)dayspast];
@@ -50,7 +60,6 @@
             if((PointsFromMealPlan-Points)/(float)dayspast >(Points)/(float)daysmore){
                 self.IdeaSpendingRatePerDay.textColor = [UIColor redColor]; 
             }
-            
             if((PointsFromMealPlan-Points)/(float)dayspast <(Points)/(float)daysmore){
                 self.IdeaSpendingRatePerDay.textColor = [UIColor greenColor]; 
             }
@@ -73,22 +82,31 @@
             self.SpendingPerWeekLabel.text = 0;
             
         } 
-        i++; 
-      
+        i++;
     }
     
     if (theTextField == self.MealsTextFieds) {
         [theTextField resignFirstResponder];
         double mydouble2 = [self.MealsTextFieds.text doubleValue];
         Meals = (int)(mydouble2 + (mydouble2>0 ? 0.5 : -0.5));
-        self.Switch.on = YES;
+        self.Segmentcontrol.selectedSegmentIndex =1;
         self.Label.text = [NSString stringWithFormat:@"out of %d", MealsFromMealPlan]; 
+        
+        if(Meals > MealsFromMealPlan){
+            self.IdeaSpendingRatePerDay.text = 0;
+            self.SpendingRatePerDay.text = 0;
+            self.IdealSpendingRatePerWeek.text = 0;
+            self.SpendingRatePerWeek.text = 0;
+            self.IdealPerDayLabel.text = 0;
+            self.SpendingPerDayLabel.text = 0;
+            self.IdealPerWeekLabel.text = 0; 
+            self.SpendingPerWeekLabel.text = 0;
+        }
         if(MealsFromMealPlan !=0 && Meals < MealsFromMealPlan){
             self.SpendingRatePerDay.text =  [NSString stringWithFormat:@"%0.1f", (MealsFromMealPlan-Meals)/(float)dayspast];
             self.IdeaSpendingRatePerDay.text =  [NSString stringWithFormat:@"%0.1f", (Meals)/(float)daysmore];
             self.SpendingRatePerWeek.text =  [NSString stringWithFormat:@"%0.1f", 7*(MealsFromMealPlan-Meals)/(float)dayspast];
             self.IdealSpendingRatePerWeek.text =  [NSString stringWithFormat:@"%0.1f", 7*(Meals)/(float)daysmore];
-            
             if((MealsFromMealPlan-Meals)/(float)dayspast >(Meals)/(float)daysmore){
                 self.IdeaSpendingRatePerDay.textColor = [UIColor redColor]; 
             }
@@ -122,12 +140,14 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
+    }
 - (void)viewDidLoad
 {
-    //these are the objects added to the Picker's rows. here I use NSMutableArray to save the objects for later Picker to display
     
+    NSUserDefaults *defaults =[NSUserDefaults standardUserDefaults];
+    NSString *defaulsMealplan = [defaults objectForKey:@"Mealplans"];
+    NSLog(@"default: %@", defaulsMealplan);
+        
     Mealplans = [[NSMutableArray alloc] init];
     [Mealplans addObject:@"Plan A 1582 points"];
     [Mealplans addObject:@"Plan B 105 meals 723 points"];
@@ -135,12 +155,12 @@
     [Mealplans addObject:@"Plan D 165 meals 293 points"];
     [Mealplans addObject:@"Plan E 210 meals 107 points"];
 
-    PointsFromMealPlan = 723; MealsFromMealPlan=105;
+    PointsFromMealPlan = 1582; MealsFromMealPlan=0;
     self.meals.hidden=YES;
     self.MealsTextFieds.hidden=YES;
-    self.Switch.on = NO;
+    self.Segmentcontrol.selectedSegmentIndex =0; 
     self.Label.text = [NSString stringWithFormat:@"out of %0.0f", PointsFromMealPlan];
-    
+    self.Plan.text= @"PLAN A";
     NSDate *now = [NSDate date];
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"MM/dd/yyyy"];
@@ -151,7 +171,6 @@
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 
  
-    //setting the dates for schoolends/starts 
     NSDate *schoolstarts = [dateFormat dateFromString:@"09/05/2011"];
     
     NSDate *schoolends = [dateFormat dateFromString:@"12/18/2011"];
@@ -224,7 +243,6 @@
     NSLog(@"daysmore: %d", daysmore);
 
     self.Dateinformation.text = [NSString stringWithFormat:@"%@    %d Days left    %0.1f Weeks left", dateString, dateschoolends-datenow-4-5, (dateschoolends-datenow)/7.];
-    //set all the texts to 0, so we don't show anything when it the screen starts
     
     self.SpendingRatePerDay.text =0;
     self.IdeaSpendingRatePerDay.text = 0;
@@ -255,7 +273,6 @@
         cell = [UITableViewCell alloc];
     }
     
-    cell.textLabel.text = @"Hello World";
     cell.textLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:14];
     NSString *cellValue = [Mealplans objectAtIndex:indexPath.row];
     cell.textLabel.text = cellValue;
@@ -265,13 +282,9 @@
 
 -(void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-   // [self.MealsPlanPicker scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES]; 
     
-      [tv deselectRowAtIndexPath:indexPath animated:YES];
-  //  [self.MealsPlanPicker setContentOffset:self.MealsPlanPicker.contentOffset animated:YES];
-    
-    
+    [tv deselectRowAtIndexPath:indexPath animated:YES];
+        
     if(indexPath.row==0){
         PointsFromMealPlan = 1582; MealsFromMealPlan =0;
     }
@@ -287,24 +300,45 @@
     if(indexPath.row==4){
         PointsFromMealPlan = 107; MealsFromMealPlan=210; 
     }
-    if(Points > PointsFromMealPlan){
-        //    PointsFromMealPlan = Points;
+/*    if(PointsFromMealPlan == 1582){
+        self.Plan.text= @"PLAN A";
     }
+    if(PointsFromMealPlan == 723){
+        self.Plan.text= @"PLAN B";
+    }
+    if(PointsFromMealPlan == 508){
+        self.Plan.text= @"PLAN C";
+    }
+    if(PointsFromMealPlan == 293){
+        self.Plan.text= @"PLAN D";
+    }
+    if(PointsFromMealPlan == 107){
+        self.Plan.text= @"PLAN E";
+    }*/
     if(i==y && i==0 && y==0 && z%2==0){
-        self.Switch.on = NO;
+        self.Segmentcontrol.selectedSegmentIndex =0;
         self.Label.text = [NSString stringWithFormat:@"out of %0.0f", PointsFromMealPlan];
     }
     if(i==y && i==0 && y==0 && z%2==1){
-        self.Switch.on = YES;
+        self.Segmentcontrol.selectedSegmentIndex =1;
         self.Label.text = [NSString stringWithFormat:@"out of %d", MealsFromMealPlan];
     }
-    if(self.Switch.on == NO){
-        //self.Switch.on = NO;
-        self.Label.text = [NSString stringWithFormat:@"out of %0.0f", PointsFromMealPlan];
+    if(self.Segmentcontrol.selectedSegmentIndex==0){
+         self.Label.text = [NSString stringWithFormat:@"out of %0.0f", PointsFromMealPlan];
         double mydouble = [self.PointsTextField.text doubleValue];
         Points = (float)(mydouble);
         if(i>0){
-        if( PointsFromMealPlan != 0 && Points < PointsFromMealPlan){
+            if(Points > PointsFromMealPlan){
+                self.IdeaSpendingRatePerDay.text = 0;
+                self.SpendingRatePerDay.text = 0;
+                self.IdealSpendingRatePerWeek.text = 0;
+                self.SpendingRatePerWeek.text = 0;
+                self.IdealPerDayLabel.text = 0;
+                self.SpendingPerDayLabel.text = 0;
+                self.IdealPerWeekLabel.text = 0; 
+                self.SpendingPerWeekLabel.text = 0;
+            }
+            if( PointsFromMealPlan != 0 && Points < PointsFromMealPlan){
             
             self.SpendingRatePerDay.text = [NSString stringWithFormat:@"%0.1f", (PointsFromMealPlan-Points)/(float)dayspast];
             self.IdeaSpendingRatePerDay.text = [NSString stringWithFormat:@"%0.1f", (Points)/(float)daysmore];
@@ -325,7 +359,7 @@
             self.SpendingPerDayLabel.text = @"Points/Day";
             self.IdealPerWeekLabel.text = @"Points/Week"; 
             self.SpendingPerWeekLabel.text = @"Points/Week";
-        }
+           }
         if( Points == 0){
             
             self.IdeaSpendingRatePerDay.text = @":("; 
@@ -340,12 +374,21 @@
         } 
         }
     }
-    if(self.Switch.on == YES){
-        //self.Switch.on = YES;
+    if(self.Segmentcontrol.selectedSegmentIndex ==1){
         self.Label.text = [NSString stringWithFormat:@"out of %d", MealsFromMealPlan];
         double mydouble2 = [self.MealsTextFieds.text doubleValue];
         Meals = (int)(mydouble2 + (mydouble2>0 ? 0.5 : -0.5));
         if(y>0){
+            if(Meals > MealsFromMealPlan){
+                self.IdeaSpendingRatePerDay.text = 0;
+                self.SpendingRatePerDay.text = 0;
+                self.IdealSpendingRatePerWeek.text = 0;
+                self.SpendingRatePerWeek.text = 0;
+                self.IdealPerDayLabel.text = 0;
+                self.SpendingPerDayLabel.text = 0;
+                self.IdealPerWeekLabel.text = 0; 
+                self.SpendingPerWeekLabel.text = 0;
+            }
         if(MealsFromMealPlan !=0 && Meals < MealsFromMealPlan){
             self.SpendingRatePerDay.text =  [NSString stringWithFormat:@"%0.1f", (MealsFromMealPlan-Meals)/(float)dayspast];
             self.IdeaSpendingRatePerDay.text =  [NSString stringWithFormat:@"%0.1f", (Meals)/(float)daysmore];
@@ -384,7 +427,7 @@
 }
 - (IBAction)ChangeView:(id)sender {
     
-    if(self.Switch.on){
+    if(self.Segmentcontrol.selectedSegmentIndex ==1){
         self.meals.hidden=NO;
         self.MealsTextFieds.hidden=NO;
         self.points.hidden=YES;
@@ -393,29 +436,9 @@
         NSLog(@"Meals: %d", Meals);
         double mydouble2 = [self.MealsTextFieds.text doubleValue];
         Meals = (int)(mydouble2 + (mydouble2>0 ? 0.5 : -0.5));
-        if(y>0){
-        if(MealsFromMealPlan !=0 && Meals < MealsFromMealPlan){
-            self.SpendingRatePerDay.text =  [NSString stringWithFormat:@"%0.1f", (MealsFromMealPlan-Meals)/(float)dayspast];
-            self.IdeaSpendingRatePerDay.text =  [NSString stringWithFormat:@"%0.1f", (Meals)/(float)daysmore];
-            self.SpendingRatePerWeek.text =  [NSString stringWithFormat:@"%0.1f", 7*(MealsFromMealPlan-Meals)/(float)dayspast];
-            self.IdealSpendingRatePerWeek.text =  [NSString stringWithFormat:@"%0.1f", 7*(Meals)/(float)daysmore];
-
-            if((MealsFromMealPlan-Meals)/(float)dayspast >(Meals)/(float)daysmore){
-                self.IdeaSpendingRatePerDay.textColor = [UIColor redColor]; 
-            }
+        if(y==0){
             
-            if((MealsFromMealPlan-Meals)/(float)dayspast <(Meals)/(float)daysmore){
-                self.IdeaSpendingRatePerDay.textColor = [UIColor greenColor]; 
-            }
-            
-            self.IdealPerDayLabel.text = @"Meals/Day";
-            self.SpendingPerDayLabel.text = @"Meals/Day";
-            self.IdealPerWeekLabel.text = @"Meals/Week"; 
-            self.SpendingPerWeekLabel.text = @"Meals/Week";
-        }        
-        if(Meals ==0){
-            self.IdeaSpendingRatePerDay.text = @":(";
-            self.IdeaSpendingRatePerDay.textColor = [UIColor blackColor];
+            self.IdeaSpendingRatePerDay.text = 0;
             self.SpendingRatePerDay.text = 0;
             self.IdealSpendingRatePerWeek.text = 0;
             self.SpendingRatePerWeek.text = 0;
@@ -423,11 +446,53 @@
             self.SpendingPerDayLabel.text = 0;
             self.IdealPerWeekLabel.text = 0; 
             self.SpendingPerWeekLabel.text = 0;
+            
         }
+        if(y>0){
+            if(Meals > MealsFromMealPlan){
+                self.IdeaSpendingRatePerDay.text = 0;
+                self.SpendingRatePerDay.text = 0;
+                self.IdealSpendingRatePerWeek.text = 0;
+                self.SpendingRatePerWeek.text = 0;
+                self.IdealPerDayLabel.text = 0;
+                self.SpendingPerDayLabel.text = 0;
+                self.IdealPerWeekLabel.text = 0; 
+                self.SpendingPerWeekLabel.text = 0;
+            }
+            if(MealsFromMealPlan !=0 && Meals < MealsFromMealPlan){
+                self.SpendingRatePerDay.text =  [NSString stringWithFormat:@"%0.1f", (MealsFromMealPlan-Meals)/(float)dayspast];
+                self.IdeaSpendingRatePerDay.text =  [NSString stringWithFormat:@"%0.1f", (Meals)/(float)daysmore];
+                self.SpendingRatePerWeek.text =  [NSString stringWithFormat:@"%0.1f", 7*(MealsFromMealPlan-Meals)/(float)dayspast];
+                self.IdealSpendingRatePerWeek.text =  [NSString stringWithFormat:@"%0.1f", 7*(Meals)/(float)daysmore];
+
+                if((MealsFromMealPlan-Meals)/(float)dayspast >(Meals)/(float)daysmore){
+                    self.IdeaSpendingRatePerDay.textColor = [UIColor redColor]; 
+                }
+            
+                if((MealsFromMealPlan-Meals)/(float)dayspast <(Meals)/(float)daysmore){
+                    self.IdeaSpendingRatePerDay.textColor = [UIColor greenColor]; 
+                }
+            
+                self.IdealPerDayLabel.text = @"Meals/Day";
+                self.SpendingPerDayLabel.text = @"Meals/Day";
+                self.IdealPerWeekLabel.text = @"Meals/Week"; 
+                self.SpendingPerWeekLabel.text = @"Meals/Week";
+            }        
+            if(Meals ==0){
+                self.IdeaSpendingRatePerDay.text = @":(";
+                self.IdeaSpendingRatePerDay.textColor = [UIColor blackColor];
+                self.SpendingRatePerDay.text = 0;
+                self.IdealSpendingRatePerWeek.text = 0;
+                self.SpendingRatePerWeek.text = 0;
+                self.IdealPerDayLabel.text = 0;
+                self.SpendingPerDayLabel.text = 0;
+                self.IdealPerWeekLabel.text = 0; 
+                self.SpendingPerWeekLabel.text = 0;
+            }
         }
         
     }
-    else{
+    if(self.Segmentcontrol.selectedSegmentIndex ==0){
         self.meals.hidden=YES;
         self.MealsTextFieds.hidden=YES;
         self.points.hidden=NO;
@@ -436,39 +501,61 @@
         NSLog(@"Points: %f", Points);
         double mydouble = [self.PointsTextField.text doubleValue];
         Points = (float)(mydouble);
-        if(i>0){
-        if( PointsFromMealPlan != 0 && Points < PointsFromMealPlan){
-            self.SpendingRatePerDay.text = [NSString stringWithFormat:@"%0.1f", (PointsFromMealPlan-Points)/(float)dayspast];
-            self.IdeaSpendingRatePerDay.text = [NSString stringWithFormat:@"%0.1f", (Points)/(float)daysmore];
-            self.SpendingRatePerWeek.text = [NSString stringWithFormat:@"%0.1f", 7*(PointsFromMealPlan-Points)/(float)dayspast];
-            self.IdealSpendingRatePerWeek.text = [NSString stringWithFormat:@"%0.1f", 7*(Points)/(float)daysmore];
+        if(i==0){
             
-            if((PointsFromMealPlan-Points)/(float)dayspast >(Points)/(float)daysmore){
-                self.IdeaSpendingRatePerDay.textColor = [UIColor redColor]; 
-            }
-            
-            if((PointsFromMealPlan-Points)/(float)dayspast <(Points)/(float)daysmore){
-                self.IdeaSpendingRatePerDay.textColor = [UIColor greenColor]; 
-            }
-            
-            
-            self.IdealPerDayLabel.text = @"Points/Day";
-            self.SpendingPerDayLabel.text = @"Points/Day";
-            self.IdealPerWeekLabel.text = @"Points/Week"; 
-            self.SpendingPerWeekLabel.text = @"Points/Week";
-        }
-        if( Points == 0){
-            self.IdeaSpendingRatePerDay.text = @":("; 
-            self.IdeaSpendingRatePerDay.textColor = [UIColor blackColor];
-            self.SpendingRatePerWeek.text = 0;
+            self.IdeaSpendingRatePerDay.text = 0;
+            self.SpendingRatePerDay.text = 0;
+            self.IdealSpendingRatePerWeek.text = 0;
             self.SpendingRatePerWeek.text = 0;
             self.IdealPerDayLabel.text = 0;
             self.SpendingPerDayLabel.text = 0;
             self.IdealPerWeekLabel.text = 0; 
             self.SpendingPerWeekLabel.text = 0;
-        }        
+            
+        }
+        if(i>0){
+            if(Points > PointsFromMealPlan){
+                self.IdeaSpendingRatePerDay.text = 0;
+                self.SpendingRatePerDay.text = 0;
+                self.IdealSpendingRatePerWeek.text = 0;
+                self.SpendingRatePerWeek.text = 0;
+                self.IdealPerDayLabel.text = 0;
+                self.SpendingPerDayLabel.text = 0;
+                self.IdealPerWeekLabel.text = 0; 
+                self.SpendingPerWeekLabel.text = 0;
+            }
+            if( PointsFromMealPlan != 0 && Points < PointsFromMealPlan){
+                self.SpendingRatePerDay.text = [NSString stringWithFormat:@"%0.1f", (PointsFromMealPlan-Points)/(float)dayspast];
+                self.IdeaSpendingRatePerDay.text = [NSString stringWithFormat:@"%0.1f", (Points)/(float)daysmore];
+                self.SpendingRatePerWeek.text = [NSString stringWithFormat:@"%0.1f", 7*(PointsFromMealPlan-Points)/(float)dayspast];
+                self.IdealSpendingRatePerWeek.text = [NSString stringWithFormat:@"%0.1f", 7*(Points)/(float)daysmore];
+            
+                if((PointsFromMealPlan-Points)/(float)dayspast >(Points)/(float)daysmore){
+                self.IdeaSpendingRatePerDay.textColor = [UIColor redColor]; 
+                }
+            
+                if((PointsFromMealPlan-Points)/(float)dayspast <(Points)/(float)daysmore){
+                    self.IdeaSpendingRatePerDay.textColor = [UIColor greenColor]; 
+                }
+            
+            
+                self.IdealPerDayLabel.text = @"Points/Day";
+                self.SpendingPerDayLabel.text = @"Points/Day";
+                self.IdealPerWeekLabel.text = @"Points/Week"; 
+                self.SpendingPerWeekLabel.text = @"Points/Week";
+            }
+            if(Points == 0){
+                self.IdeaSpendingRatePerDay.text = @":("; 
+                self.IdeaSpendingRatePerDay.textColor = [UIColor blackColor];
+                self.SpendingRatePerWeek.text = 0;
+                self.SpendingRatePerWeek.text = 0;
+                self.IdealPerDayLabel.text = 0;
+                self.SpendingPerDayLabel.text = 0;
+                self.IdealPerWeekLabel.text = 0; 
+                self.SpendingPerWeekLabel.text = 0;
+            }        
         
-    }
+        }
     }
     z++;
 }
@@ -488,7 +575,6 @@
     [self setMealsTextFieds:nil];
     [self setSpendingRatePerDay:nil];
     [self setIdeaSpendingRatePerDay:nil];
-    [self setSwitch:nil];
     [self setLabel:nil];
     [self setIdealPerDayLabel:nil];
     [self setSpendingPerDayLabel:nil];
@@ -500,6 +586,9 @@
     [self setIdealSpendingRatePerWeek:nil];
     [self setSpendingPerWeekLabel:nil];
     [self setIdealPerWeekLabel:nil];
+    [self setSegmentcontrol:nil];
+    [self setPlan:nil];
+    [self setDefaultPicker:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -522,7 +611,6 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     } else {
@@ -533,4 +621,12 @@
 
 
 
+- (IBAction)SaveDefault:(id)sender {
+    NSString *MealPlans= @"Plan B";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:MealPlans forKey:@"MealPlans"];
+    
+    [defaults synchronize];
+    NSLog(@"program saved");
+}
 @end
