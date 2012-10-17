@@ -12,8 +12,8 @@ Demo Porject ScreenShots
 --------
 
 
-![SplashScreen](https://github.com/Neil-Ni/WesPoints/blob/master/wespoints_loading_page.png)
-![Logo](https://github.com/Neil-Ni/WesPoints/blob/master/WesPoints_512x512.png)
+![SplashScreen](https://github.com/Neil-Ni/WesPoints/raw/master/wespoints_loading_page.png)
+![Logo](https://github.com/Neil-Ni/WesPoints/raw/master/WesPoints_512x512.png)
 
 
 ![Screen](https://github.com/Neil-Ni/WesPoints/raw/master/1.1/IMG_20.png)
