@@ -16,10 +16,10 @@ Demo Porject ScreenShots
 ![Logo](https://github.com/Neil-Ni/WesPoints/blob/master/WesPoints_512x512.png)
 
 
-![Screen](Neil-Ni/WesPoints/tree/master/1.1/IMG_20.png)
-![Screen](Neil-Ni/WesPoints/tree/master/1.1/IMG_21.png)
-![Screen](Neil-Ni/WesPoints/tree/master/1.1/IMG_28.png)
-![Screen](Neil-Ni/WesPoints/tree/master/1.1/IMG_29.png)
+![Screen](https://github.com/Neil-Ni/WesPoints/raw/master/1.1/IMG_20.png)
+![Screen](https://github.com/Neil-Ni/WesPoints/raw/master/1.1/IMG_21.png)
+![Screen](https://github.com/Neil-Ni/WesPoints/raw/master/1.1/IMG_28.png)
+![Screen](https://github.com/Neil-Ni/WesPoints/raw/master/1.1/IMG_29.png)
 
 
 Credits
