@@ -1,7 +1,7 @@
-# [WesPoints]
+# WesPoints
 
 Description of what this project is for and why you might want to implement it. 
-The offcial link to AppStore is [WesPoints](https://itunes.apple.com/us/app/wespoint/id495530880?mt=8).
+The offcial link to AppStore is here: [WesPoints](https://itunes.apple.com/us/app/wespoint/id495530880?mt=8).
 
 Documentation
 -------------
@@ -12,14 +12,14 @@ Demo Porject ScreenShots
 --------
 
 
-![SplashScreen](Neil-Ni.github.com/WesPoints/wespoints_loading_page.png)
-![Logo](Neil-Ni.github.com/WesPoints/WesPoints_512x512.png)
-![Screen 1](Neil-Ni.github.com/WesPoints/1.1/IMG_2701.png)
-![Screen 2](Neil-Ni.github.com/WesPoints/1.1/IMG_2698.png)
-![Screen 3](Neil-Ni.github.com/WesPoints/1.1/IMG_2699.png)
+![SplashScreen](https://github.com/Neil-Ni/WesPoints/blob/master/wespoints_loading_page.png)
+![Logo](https://github.com/Neil-Ni/WesPoints/blob/master/WesPoints_512x512.png)
 
+![Screen](https://github.com/Neil-Ni/WesPoints/tree/master/1.1/IMG_20.png)
+![Screen](https://github.com/Neil-Ni/WesPoints/tree/master/1.1/IMG_21.png)
+![Screen](https://github.com/Neil-Ni/WesPoints/tree/master/1.1/IMG_28.png)
+![Screen](https://github.com/Neil-Ni/WesPoints/tree/master/1.1/IMG_29.png)
 
-Please see the [contribution guidelines](https://github.com/gettyimages/[project-name]/CONTRIBUTION.md).
 
 Credits
 -----------
