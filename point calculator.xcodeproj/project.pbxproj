@@ -8,26 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		8C290B0D14475A13000BB368 /* points_label (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 8C290B0C14475A13000BB368 /* points_label (1).png */; };
+		8C290B1014476092000BB368 /* points_day_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C290B0F14476092000BB368 /* points_day_back.png */; };
+		8C31686A14DB67F7003A74C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C31686914DB67F7003A74C2 /* CoreGraphics.framework */; };
 		8C49B23B142D15D8002DEC8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C49B23A142D15D8002DEC8E /* UIKit.framework */; };
 		8C49B23D142D15D8002DEC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C49B23C142D15D8002DEC8E /* Foundation.framework */; };
 		8C49B243142D15D8002DEC8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C49B241142D15D8002DEC8E /* InfoPlist.strings */; };
 		8C49B245142D15D8002DEC8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C49B244142D15D8002DEC8E /* main.m */; };
 		8C49B249142D15D8002DEC8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C49B248142D15D8002DEC8E /* AppDelegate.m */; };
 		8C49B24C142D15D8002DEC8E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C49B24A142D15D8002DEC8E /* MainStoryboard_iPhone.storyboard */; };
-		8C49B24F142D15D8002DEC8E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C49B24D142D15D8002DEC8E /* MainStoryboard_iPad.storyboard */; };
 		8C49B252142D15D8002DEC8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C49B251142D15D8002DEC8E /* ViewController.m */; };
 		8C49B25A142D15D9002DEC8E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C49B259142D15D9002DEC8E /* SenTestingKit.framework */; };
 		8C49B25B142D15D9002DEC8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C49B23A142D15D8002DEC8E /* UIKit.framework */; };
 		8C49B25C142D15D9002DEC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C49B23C142D15D8002DEC8E /* Foundation.framework */; };
 		8C49B264142D15D9002DEC8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C49B262142D15D9002DEC8E /* InfoPlist.strings */; };
 		8C49B267142D15D9002DEC8E /* point_calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C49B266142D15D9002DEC8E /* point_calculatorTests.m */; };
-		8C87E80114475485007980B0 /* points_label_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C87E7FA14475485007980B0 /* points_label_active.png */; };
-		8C87E80214475485007980B0 /* points_label_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C87E7FB14475485007980B0 /* points_label_inactive.png */; };
-		8C87E80314475485007980B0 /* points_progress_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C87E7FC14475485007980B0 /* points_progress_circle.png */; };
+		8C543CA514DDDAB600C998D8 /* wespoints_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C543CA414DDDAB600C998D8 /* wespoints_icon_57.png */; };
+		8C543CA714DDDDA500C998D8 /* wespoints_loading_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C543CA614DDDDA500C998D8 /* wespoints_loading_page.png */; };
+		8C543CA814DDDDC300C998D8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C833E96144A1C02005D0221 /* Default@2x.png */; };
+		8C543CAA14DDDE0800C998D8 /* enter2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C543CA914DDDE0800C998D8 /* enter2.png */; };
+		8C833E92144A0BD8005D0221 /* Gray_Background_New.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C833E91144A0BD8005D0221 /* Gray_Background_New.png */; };
+		8C833E95144A1BEC005D0221 /* points_loading_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C833E94144A1BEC005D0221 /* points_loading_red.png */; };
+		8C833E99144A1C2F005D0221 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C833E98144A1C2F005D0221 /* Default.png */; };
+		8C833E9B144A1CC6005D0221 /* WesPointsIcon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C833E9A144A1CC6005D0221 /* WesPointsIcon_57x57.png */; };
+		8C833E9D144A1CD2005D0221 /* WesPointsIcon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C833E9C144A1CD2005D0221 /* WesPointsIcon_57x57.png */; };
 		8C87E80414475485007980B0 /* points_progress_forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C87E7FD14475485007980B0 /* points_progress_forward.png */; };
-		8C87E80514475485007980B0 /* points_progress_past.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C87E7FE14475485007980B0 /* points_progress_past.png */; };
 		8C87E80614475485007980B0 /* points_label.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C87E7FF14475485007980B0 /* points_label.png */; };
 		8C87E80714475485007980B0 /* points_background_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C87E80014475485007980B0 /* points_background_gray.png */; };
+		8C9F0B1B14DDC303005AAE09 /* wespoints_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F0B1A14DDC303005AAE09 /* wespoints_label.jpg */; };
+		8C9F0B1F14DDC905005AAE09 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F0B1E14DDC905005AAE09 /* red.png */; };
+		8C9F0B2114DDC92F005AAE09 /* blank_red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F0B2014DDC92F005AAE09 /* blank_red.jpg */; };
+		8CA98B5614DF09FC0034214A /* red_rounded_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA98B5514DF09FC0034214A /* red_rounded_rect.png */; };
+		8CAB4C2614D871E1003B9D01 /* MealsPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAB4C2514D871E1003B9D01 /* MealsPlan.m */; };
+		8CAB4C2914D871F8003B9D01 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAB4C2814D871F8003B9D01 /* SecondView.m */; };
+		8CAB4C6814D89291003B9D01 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAB4C6714D89291003B9D01 /* CustomSegue.m */; };
+		8CECAB6714F991FB003ABCDD /* wespoints_springbreak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CECAB6614F991FB003ABCDD /* wespoints_springbreak.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +56,9 @@
 
 /* Begin PBXFileReference section */
 		8C290B0C14475A13000BB368 /* points_label (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "points_label (1).png"; sourceTree = "<group>"; };
-		8C49B236142D15D8002DEC8E /* point calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "point calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C290B0F14476092000BB368 /* points_day_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_day_back.png; sourceTree = "<group>"; };
+		8C31686914DB67F7003A74C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8C49B236142D15D8002DEC8E /* WesPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C49B23A142D15D8002DEC8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8C49B23C142D15D8002DEC8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8C49B240142D15D8002DEC8E /* point calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "point calculator-Info.plist"; sourceTree = "<group>"; };
@@ -52,7 +68,6 @@
 		8C49B247142D15D8002DEC8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C49B248142D15D8002DEC8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8C49B24B142D15D8002DEC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		8C49B24E142D15D8002DEC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8C49B250142D15D8002DEC8E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8C49B251142D15D8002DEC8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8C49B258142D15D9002DEC8E /* point calculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "point calculatorTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,13 +76,29 @@
 		8C49B263142D15D9002DEC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C49B265142D15D9002DEC8E /* point_calculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = point_calculatorTests.h; sourceTree = "<group>"; };
 		8C49B266142D15D9002DEC8E /* point_calculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = point_calculatorTests.m; sourceTree = "<group>"; };
-		8C87E7FA14475485007980B0 /* points_label_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_label_active.png; sourceTree = "<group>"; };
-		8C87E7FB14475485007980B0 /* points_label_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_label_inactive.png; sourceTree = "<group>"; };
-		8C87E7FC14475485007980B0 /* points_progress_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_progress_circle.png; sourceTree = "<group>"; };
+		8C543CA414DDDAB600C998D8 /* wespoints_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wespoints_icon_57.png; sourceTree = "<group>"; };
+		8C543CA614DDDDA500C998D8 /* wespoints_loading_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wespoints_loading_page.png; sourceTree = "<group>"; };
+		8C543CA914DDDE0800C998D8 /* enter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter2.png; sourceTree = "<group>"; };
+		8C833E91144A0BD8005D0221 /* Gray_Background_New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gray_Background_New.png; sourceTree = "<group>"; };
+		8C833E94144A1BEC005D0221 /* points_loading_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_loading_red.png; sourceTree = "<group>"; };
+		8C833E96144A1C02005D0221 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8C833E98144A1C2F005D0221 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8C833E9A144A1CC6005D0221 /* WesPointsIcon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WesPointsIcon_57x57.png; sourceTree = "<group>"; };
+		8C833E9C144A1CD2005D0221 /* WesPointsIcon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WesPointsIcon_57x57.png; sourceTree = "<group>"; };
 		8C87E7FD14475485007980B0 /* points_progress_forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_progress_forward.png; sourceTree = "<group>"; };
-		8C87E7FE14475485007980B0 /* points_progress_past.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_progress_past.png; sourceTree = "<group>"; };
 		8C87E7FF14475485007980B0 /* points_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_label.png; sourceTree = "<group>"; };
 		8C87E80014475485007980B0 /* points_background_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = points_background_gray.png; sourceTree = "<group>"; };
+		8C9F0B1A14DDC303005AAE09 /* wespoints_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wespoints_label.jpg; sourceTree = "<group>"; };
+		8C9F0B1E14DDC905005AAE09 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		8C9F0B2014DDC92F005AAE09 /* blank_red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blank_red.jpg; sourceTree = "<group>"; };
+		8CA98B5514DF09FC0034214A /* red_rounded_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_rounded_rect.png; sourceTree = "<group>"; };
+		8CAB4C2414D871E1003B9D01 /* MealsPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealsPlan.h; sourceTree = "<group>"; };
+		8CAB4C2514D871E1003B9D01 /* MealsPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealsPlan.m; sourceTree = "<group>"; };
+		8CAB4C2714D871F8003B9D01 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		8CAB4C2814D871F8003B9D01 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
+		8CAB4C6614D89291003B9D01 /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegue.h; sourceTree = "<group>"; };
+		8CAB4C6714D89291003B9D01 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegue.m; sourceTree = "<group>"; };
+		8CECAB6614F991FB003ABCDD /* wespoints_springbreak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wespoints_springbreak.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C31686A14DB67F7003A74C2 /* CoreGraphics.framework in Frameworks */,
 				8C49B23B142D15D8002DEC8E /* UIKit.framework in Frameworks */,
 				8C49B23D142D15D8002DEC8E /* Foundation.framework in Frameworks */,
 			);
@@ -93,9 +125,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C31686214DB6696003A74C2 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
 		8C49B22B142D15D8002DEC8E = {
 			isa = PBXGroup;
 			children = (
+				8C31686914DB67F7003A74C2 /* CoreGraphics.framework */,
+				8C833E9C144A1CD2005D0221 /* WesPointsIcon_57x57.png */,
+				8C833E98144A1C2F005D0221 /* Default.png */,
+				8C833E96144A1C02005D0221 /* Default@2x.png */,
+				8C9F0B1E14DDC905005AAE09 /* red.png */,
+				8C543CA614DDDDA500C998D8 /* wespoints_loading_page.png */,
+				8C543CA914DDDE0800C998D8 /* enter2.png */,
+				8C9F0B2014DDC92F005AAE09 /* blank_red.jpg */,
+				8C9F0B1A14DDC303005AAE09 /* wespoints_label.jpg */,
+				8CA98B5514DF09FC0034214A /* red_rounded_rect.png */,
+				8C543CA414DDDAB600C998D8 /* wespoints_icon_57.png */,
+				8CECAB6614F991FB003ABCDD /* wespoints_springbreak.jpg */,
 				8C49B23E142D15D8002DEC8E /* point calculator */,
 				8C49B25F142D15D9002DEC8E /* point calculatorTests */,
 				8C49B239142D15D8002DEC8E /* Frameworks */,
@@ -106,7 +157,7 @@
 		8C49B237142D15D8002DEC8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C49B236142D15D8002DEC8E /* point calculator.app */,
+				8C49B236142D15D8002DEC8E /* WesPoint.app */,
 				8C49B258142D15D9002DEC8E /* point calculatorTests.octest */,
 			);
 			name = Products;
@@ -125,21 +176,18 @@
 		8C49B23E142D15D8002DEC8E /* point calculator */ = {
 			isa = PBXGroup;
 			children = (
+				8C31686214DB6696003A74C2 /* Button */,
+				8CAB4C2A14D87208003B9D01 /* Model */,
 				8C49B247142D15D8002DEC8E /* AppDelegate.h */,
 				8C49B248142D15D8002DEC8E /* AppDelegate.m */,
 				8C49B24A142D15D8002DEC8E /* MainStoryboard_iPhone.storyboard */,
-				8C49B24D142D15D8002DEC8E /* MainStoryboard_iPad.storyboard */,
-				8C87E7FA14475485007980B0 /* points_label_active.png */,
-				8C87E7FB14475485007980B0 /* points_label_inactive.png */,
-				8C290B0C14475A13000BB368 /* points_label (1).png */,
-				8C87E7FC14475485007980B0 /* points_progress_circle.png */,
-				8C87E7FD14475485007980B0 /* points_progress_forward.png */,
-				8C87E7FE14475485007980B0 /* points_progress_past.png */,
-				8C87E7FF14475485007980B0 /* points_label.png */,
-				8C87E80014475485007980B0 /* points_background_gray.png */,
 				8C49B250142D15D8002DEC8E /* ViewController.h */,
 				8C49B251142D15D8002DEC8E /* ViewController.m */,
+				8CAB4C2714D871F8003B9D01 /* SecondView.h */,
+				8CAB4C2814D871F8003B9D01 /* SecondView.m */,
 				8C49B23F142D15D8002DEC8E /* Supporting Files */,
+				8CAB4C6614D89291003B9D01 /* CustomSegue.h */,
+				8CAB4C6714D89291003B9D01 /* CustomSegue.m */,
 			);
 			path = "point calculator";
 			sourceTree = "<group>";
@@ -147,6 +195,14 @@
 		8C49B23F142D15D8002DEC8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8C290B0F14476092000BB368 /* points_day_back.png */,
+				8C290B0C14475A13000BB368 /* points_label (1).png */,
+				8C833E94144A1BEC005D0221 /* points_loading_red.png */,
+				8C833E91144A0BD8005D0221 /* Gray_Background_New.png */,
+				8C87E7FD14475485007980B0 /* points_progress_forward.png */,
+				8C833E9A144A1CC6005D0221 /* WesPointsIcon_57x57.png */,
+				8C87E7FF14475485007980B0 /* points_label.png */,
+				8C87E80014475485007980B0 /* points_background_gray.png */,
 				8C49B240142D15D8002DEC8E /* point calculator-Info.plist */,
 				8C49B241142D15D8002DEC8E /* InfoPlist.strings */,
 				8C49B244142D15D8002DEC8E /* main.m */,
@@ -174,6 +230,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8CAB4C2A14D87208003B9D01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CAB4C2414D871E1003B9D01 /* MealsPlan.h */,
+				8CAB4C2514D871E1003B9D01 /* MealsPlan.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,7 +256,7 @@
 			);
 			name = "point calculator";
 			productName = "point calculator";
-			productReference = 8C49B236142D15D8002DEC8E /* point calculator.app */;
+			productReference = 8C49B236142D15D8002DEC8E /* WesPoint.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8C49B257142D15D9002DEC8E /* point calculatorTests */ = {
@@ -220,7 +285,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = yoseka;
+				ORGANIZATIONNAME = "Wesleyan iOS Application Development";
 			};
 			buildConfigurationList = 8C49B230142D15D8002DEC8E /* Build configuration list for PBXProject "point calculator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -247,15 +312,25 @@
 			files = (
 				8C49B243142D15D8002DEC8E /* InfoPlist.strings in Resources */,
 				8C49B24C142D15D8002DEC8E /* MainStoryboard_iPhone.storyboard in Resources */,
-				8C49B24F142D15D8002DEC8E /* MainStoryboard_iPad.storyboard in Resources */,
-				8C87E80114475485007980B0 /* points_label_active.png in Resources */,
-				8C87E80214475485007980B0 /* points_label_inactive.png in Resources */,
-				8C87E80314475485007980B0 /* points_progress_circle.png in Resources */,
 				8C87E80414475485007980B0 /* points_progress_forward.png in Resources */,
-				8C87E80514475485007980B0 /* points_progress_past.png in Resources */,
 				8C87E80614475485007980B0 /* points_label.png in Resources */,
 				8C87E80714475485007980B0 /* points_background_gray.png in Resources */,
 				8C290B0D14475A13000BB368 /* points_label (1).png in Resources */,
+				8C290B1014476092000BB368 /* points_day_back.png in Resources */,
+				8C833E92144A0BD8005D0221 /* Gray_Background_New.png in Resources */,
+				8C833E95144A1BEC005D0221 /* points_loading_red.png in Resources */,
+				8C833E99144A1C2F005D0221 /* Default.png in Resources */,
+				8C833E9B144A1CC6005D0221 /* WesPointsIcon_57x57.png in Resources */,
+				8C833E9D144A1CD2005D0221 /* WesPointsIcon_57x57.png in Resources */,
+				8C9F0B1B14DDC303005AAE09 /* wespoints_label.jpg in Resources */,
+				8C9F0B1F14DDC905005AAE09 /* red.png in Resources */,
+				8C9F0B2114DDC92F005AAE09 /* blank_red.jpg in Resources */,
+				8C543CA514DDDAB600C998D8 /* wespoints_icon_57.png in Resources */,
+				8C543CA714DDDDA500C998D8 /* wespoints_loading_page.png in Resources */,
+				8C543CA814DDDDC300C998D8 /* Default@2x.png in Resources */,
+				8C543CAA14DDDE0800C998D8 /* enter2.png in Resources */,
+				8CA98B5614DF09FC0034214A /* red_rounded_rect.png in Resources */,
+				8CECAB6714F991FB003ABCDD /* wespoints_springbreak.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +368,9 @@
 				8C49B245142D15D8002DEC8E /* main.m in Sources */,
 				8C49B249142D15D8002DEC8E /* AppDelegate.m in Sources */,
 				8C49B252142D15D8002DEC8E /* ViewController.m in Sources */,
+				8CAB4C2614D871E1003B9D01 /* MealsPlan.m in Sources */,
+				8CAB4C2914D871F8003B9D01 /* SecondView.m in Sources */,
+				8CAB4C6814D89291003B9D01 /* CustomSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,14 +409,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		8C49B24D142D15D8002DEC8E /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C49B24E142D15D8002DEC8E /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		8C49B262142D15D9002DEC8E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,7 +426,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tzu-Yang Ni (RWRR8JXJL2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -371,6 +442,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "0D8978FA-E39F-4B5C-95B7-279A7FCE58F9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,7 +454,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tzu-Yang Ni (RWRR8JXJL2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -391,6 +464,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "0D8978FA-E39F-4B5C-95B7-279A7FCE58F9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -400,10 +474,15 @@
 		8C49B26B142D15D9002DEC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tzu-Yang Ni (RWRR8JXJL2)";
+				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "point calculator/point calculator-Prefix.pch";
 				INFOPLIST_FILE = "point calculator/point calculator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = WesPoint;
+				PROVISIONING_PROFILE = "5571B821-D3AA-4E5C-9E25-B2F874CB7D45";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,10 +490,15 @@
 		8C49B26C142D15D9002DEC8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tzu-Yang Ni (RWRR8JXJL2)";
+				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "point calculator/point calculator-Prefix.pch";
 				INFOPLIST_FILE = "point calculator/point calculator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = WesPoint;
+				PROVISIONING_PROFILE = "1E69330D-7B0A-4319-9DA0-437C3CAFC322";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,6 +537,62 @@
 			};
 			name = Release;
 		};
+		8CAB4C8314D8D59F003B9D01 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tzu-Yang Ni (RWRR8JXJL2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "0D8978FA-E39F-4B5C-95B7-279A7FCE58F9";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		8CAB4C8414D8D59F003B9D01 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tzu-Yang Ni (RWRR8JXJL2)";
+				COMPRESS_PNG_FILES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "point calculator/point calculator-Prefix.pch";
+				INFOPLIST_FILE = "point calculator/point calculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = WesPoint;
+				PROVISIONING_PROFILE = "5571B821-D3AA-4E5C-9E25-B2F874CB7D45";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		8CAB4C8514D8D59F003B9D01 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/point calculator.app/point calculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "point calculator/point calculator-Prefix.pch";
+				INFOPLIST_FILE = "point calculatorTests/point calculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Ad Hoc";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +601,7 @@
 			buildConfigurations = (
 				8C49B268142D15D9002DEC8E /* Debug */,
 				8C49B269142D15D9002DEC8E /* Release */,
+				8CAB4C8314D8D59F003B9D01 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -470,6 +611,7 @@
 			buildConfigurations = (
 				8C49B26B142D15D9002DEC8E /* Debug */,
 				8C49B26C142D15D9002DEC8E /* Release */,
+				8CAB4C8414D8D59F003B9D01 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -479,6 +621,7 @@
 			buildConfigurations = (
 				8C49B26E142D15D9002DEC8E /* Debug */,
 				8C49B26F142D15D9002DEC8E /* Release */,
+				8CAB4C8514D8D59F003B9D01 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,4 +10,6 @@
 
 @implementation MealsPlan
 
+@synthesize Meals, Points;
+
 @end

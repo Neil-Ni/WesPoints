@@ -11,6 +11,6 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
-
+@synthesize Meals, Points;
 
 @end

@@ -27,17 +27,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8C49B257142D15D9002DEC8E"
-               BuildableName = "point calculatorTests.octest"
-               BlueprintName = "point calculatorTests"
-               ReferencedContainer = "container:point calculator.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8C49B235142D15D8002DEC8E"
+            BuildableName = "WesPoint.app"
+            BlueprintName = "point calculator"
+            ReferencedContainer = "container:point calculator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"

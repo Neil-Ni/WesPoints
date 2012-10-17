@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CustomSegue : NSObject
+@interface CustomSegue : UIStoryboardSegue
 
 @end

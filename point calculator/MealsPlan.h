@@ -10,4 +10,7 @@
 
 @interface MealsPlan : NSObject
 
+@property int Meals; 
+@property int Points; 
+
 @end
