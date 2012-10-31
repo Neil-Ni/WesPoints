@@ -1,6 +1,5 @@
 # WesPoints
 
-Description of what this project is for and why you might want to implement it. 
 The offcial link to AppStore is here: [WesPoints](https://itunes.apple.com/us/app/wespoint/id495530880?mt=8).
 
 
