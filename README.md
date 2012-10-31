@@ -3,6 +3,10 @@
 Description of what this project is for and why you might want to implement it. 
 The offcial link to AppStore is here: [WesPoints](https://itunes.apple.com/us/app/wespoint/id495530880?mt=8).
 
+
+--update:   
+    This App is not currently available online anymore due to the financial discontinuity from Wesleyan University. It should be back online soon once the account has be responsored.
+
 Documentation
 -------------
 This App provides a way for Wesleyan students to calculate their poins/meals spent at Wesleyan University.
